@@ -8,22 +8,22 @@ from pyrogram.errors import FloodWait, ChannelInvalid, ChannelPrivate
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, BotCommand
 
 # Database setup
-MONGODB_URI = "" # Enter Your Echo Client's Mongodb URI
+MONGODB_URI = "mongodb+srv://monkecho:xuSjCwOjOt6pYFX6@cluster0.crm4pne.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" # Enter Your Echo Client's Mongodb URI
 mongo_client = MongoClient(MONGODB_URI)
 db = mongo_client['Echo_Doc_Spotter'] # Do not change
 
 # Bot and User Session Configuration
-api_id = ''  # Your api_id
-api_hash = ''  # Your api_hash
-bot_token = ''  # Your bot token. ⚠️ Remember, do not enter your Echo Client Bot Token here. Enter a new bot token here
-user_session_string = ''  # Your user session string
+api_id = '26241463'  # Your api_id
+api_hash = 'cbe4eea1d4be2284cb4c21ca0bf88c94'  # Your api_hash
+bot_token = '7052962928:AAGhj7lZ9YvBzLuxVVHp1gCjbgWhVSkVXNQ'  # Your bot token. ⚠️ Remember, do not enter your Echo Client Bot Token here. Enter a new bot token here
+user_session_string = 'BQGQabcAwl6S5gBc4WJl3csQXFlUpLHxx9IFyQsuHwZs0KwCzqJBOfaKie25HAnFsQcFlU4i93U7oaPyrMD2Io5A0MhPYMylXMgcNPMm7Ma25I0goiSWYwZo9007ZgZYzOghRikM5w9F2AvTfGnxlsSgLhO3B9d0k6acMK0BZS8jV_jNd5X6JFDfEwKmrdUPYYckXsbBEH_qizaHPdfWVWmKE0P7T07VEMunqhbxc0vP7Zz1d5rzuoK28QpCXYV4FKUfk6rAEC9qtvjNG1UNXRd9xq1JwUGIlIylssFciDl30ajZdhQsUMb7nUeFBOt57GhwZlF136VVV4eyoeC8GxkasFOx1AAAAAAwYmWVAA'  # Your user session string
 
 # Rate Limit Control System
 small_sleep_interval = 1  # Time in seconds to sleep between every two files (Adjust as needed | Remember about TG Rate Limits)
 large_sleep_interval = 300  # Time in seconds to sleep after every 150 files indexed (Adjust as needed | Remember about TG Rate Limits) 
 
 # Allowed controller user IDs
-controller_ids = {}  # Set User IDs, who can use TeleFileDex Supporter Plugin | Separate Multiple by comma (e.g. 123456789,987654321,192837465)
+controller_ids = {811754901}  # Set User IDs, who can use TeleFileDex Supporter Plugin | Separate Multiple by comma (e.g. 123456789,987654321,192837465)
 
 # Do not edit anything below this line
 #----------------------------------------------------------------------------------------------------------------------------------------------------
